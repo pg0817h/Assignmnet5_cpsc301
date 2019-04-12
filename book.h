@@ -13,18 +13,17 @@ private:
 	string returnStatus;
 public:
 
-	book(string bookI, string bookT, string Au,string Cate,string returnS);
-
-	void setbookId(string bookI);
-	string getbookId();
+	//book(int bookI, string bookT, string Au,string Cate,string returnS);
+	book(int bookI, string bookT, string Au, string Cate);
+	void setbookId(int bookI);
+	int getbookId();
 	void setbookTitle(string bookT);
 	string getbookTitle();
 	void setAuthor(string Au);
 	string getAuthor();
 	void setCategory(string Cate);
 	string getCategory();
-
-	void setreturnStatus(string returnS);
+    void setreturnStatus(string returnS);
 	string getreturnStatus();
 
 };

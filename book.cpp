@@ -16,45 +16,49 @@ string getCategory();
 void setreturnStatus(string returnS);
 string getreturnStatus();
 */
-book::book(string bookI, string bookT, string Au, string Cate, string returnS) {
-
+book::book(int bookI, string bookT, string Au, string Cate) {
+	bookId = bookI;
+	bookTitle = bookT;
+	Author = Au;
+	Category = Cate;
 }
 
-void book::setbookId(string bookI) {
-
+void book::setbookId(int bookI) {
+	bookId = bookI;
 }
 
-string book::getbookId() {
-
+int book::getbookId() {
+	return bookId;
 }
 void book::setbookTitle(string bookT) {
-
+	bookTitle = bookT;
 }
 
 string book::getbookTitle() {
-
+	return bookTitle;
 }
 
 void book::setAuthor(string Au) {
-
+	Author = Au;
 }
 
 string book::getAuthor() {
-
+	return Author;
 }
 
 void book::setCategory(string Cate) {
-
+	Category = Cate;
 }
 
 string book::getCategory() {
 
+	return Category;
 }
 
 void book::setreturnStatus(string returnS) {
-
+	returnStatus = returnS;
 }
 
 string book::getreturnStatus() {
-
+	return returnStatus;
 }
